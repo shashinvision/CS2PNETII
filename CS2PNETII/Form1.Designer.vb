@@ -22,8 +22,8 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnAleatoreo = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.destino6y = New System.Windows.Forms.DomainUpDown()
@@ -44,18 +44,8 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnAleatoreo = New System.Windows.Forms.Button()
-        Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.GroupBox1)
-        Me.Panel1.Location = New System.Drawing.Point(2, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(894, 562)
-        Me.Panel1.TabIndex = 0
         '
         'GroupBox1
         '
@@ -82,12 +72,21 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.GroupBox1.Location = New System.Drawing.Point(24, 30)
+        Me.GroupBox1.Location = New System.Drawing.Point(21, 29)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(247, 327)
-        Me.GroupBox1.TabIndex = 0
+        Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Coordenadas"
+        '
+        'btnAleatoreo
+        '
+        Me.btnAleatoreo.Location = New System.Drawing.Point(81, 254)
+        Me.btnAleatoreo.Name = "btnAleatoreo"
+        Me.btnAleatoreo.Size = New System.Drawing.Size(160, 23)
+        Me.btnAleatoreo.TabIndex = 20
+        Me.btnAleatoreo.Text = "Coordenada Aleatorea"
+        Me.btnAleatoreo.UseVisualStyleBackColor = True
         '
         'Label8
         '
@@ -257,44 +256,22 @@ Partial Class Form1
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Dest 1"
         '
-        'btnAleatoreo
-        '
-        Me.btnAleatoreo.Location = New System.Drawing.Point(81, 254)
-        Me.btnAleatoreo.Name = "btnAleatoreo"
-        Me.btnAleatoreo.Size = New System.Drawing.Size(160, 23)
-        Me.btnAleatoreo.TabIndex = 20
-        Me.btnAleatoreo.Text = "Coordenada Aleatorea"
-        Me.btnAleatoreo.UseVisualStyleBackColor = True
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(895, 562)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form1"
         Me.Text = "Reparto - Felipe Mancilla"
-        Me.Panel1.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents destino1x As DomainUpDown
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents destino6x As DomainUpDown
-    Friend WithEvents destino5x As DomainUpDown
-    Friend WithEvents destino4x As DomainUpDown
-    Friend WithEvents destino3x As DomainUpDown
-    Friend WithEvents destino2x As DomainUpDown
+    Friend WithEvents btnAleatoreo As Button
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents destino6y As DomainUpDown
@@ -303,5 +280,16 @@ Partial Class Form1
     Friend WithEvents destino3y As DomainUpDown
     Friend WithEvents destino2y As DomainUpDown
     Friend WithEvents destino1y As DomainUpDown
-    Friend WithEvents btnAleatoreo As Button
+    Friend WithEvents destino6x As DomainUpDown
+    Friend WithEvents destino5x As DomainUpDown
+    Friend WithEvents destino4x As DomainUpDown
+    Friend WithEvents destino3x As DomainUpDown
+    Friend WithEvents destino2x As DomainUpDown
+    Friend WithEvents destino1x As DomainUpDown
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
 End Class
