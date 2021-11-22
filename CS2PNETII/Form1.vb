@@ -30,7 +30,7 @@
         PictureBox2.Location = New Point(destino2x.Text, destino2y.Text)
         PictureBox2.Image = Image.FromFile("C:\Images\1_google.bmp")
 
-        PictureBox3.Location = New Point(destino3x.Text, destino2y.Text)
+        PictureBox3.Location = New Point(destino3x.Text, destino3y.Text)
         PictureBox3.Image = Image.FromFile("C:\Images\2_huawei.bmp")
 
         PictureBox4.Location = New Point(destino4x.Text, destino4y.Text)
