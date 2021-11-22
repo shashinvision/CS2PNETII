@@ -44,7 +44,7 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnAleatoreo = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -60,7 +60,7 @@ Partial Class Form1
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.LightGray
-        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.btnAleatoreo)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.destino6y)
@@ -257,14 +257,14 @@ Partial Class Form1
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Dest 1"
         '
-        'Button1
+        'btnAleatoreo
         '
-        Me.Button1.Location = New System.Drawing.Point(81, 254)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(160, 23)
-        Me.Button1.TabIndex = 20
-        Me.Button1.Text = "Coordenada Aleatorea"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnAleatoreo.Location = New System.Drawing.Point(81, 254)
+        Me.btnAleatoreo.Name = "btnAleatoreo"
+        Me.btnAleatoreo.Size = New System.Drawing.Size(160, 23)
+        Me.btnAleatoreo.TabIndex = 20
+        Me.btnAleatoreo.Text = "Coordenada Aleatorea"
+        Me.btnAleatoreo.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -303,5 +303,5 @@ Partial Class Form1
     Friend WithEvents destino3y As DomainUpDown
     Friend WithEvents destino2y As DomainUpDown
     Friend WithEvents destino1y As DomainUpDown
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnAleatoreo As Button
 End Class
