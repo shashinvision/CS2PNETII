@@ -64,6 +64,13 @@
         g.DrawCurve(miLapiz, curva)
         miLapiz.Dispose()
 
+        PictureBox1.Visible = True
+        PictureBox2.Visible = True
+        PictureBox3.Visible = True
+        PictureBox4.Visible = True
+        PictureBox5.Visible = True
+        PictureBox6.Visible = True
+
 
 
     End Sub

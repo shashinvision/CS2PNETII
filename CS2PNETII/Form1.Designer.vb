@@ -79,6 +79,7 @@ Partial Class Form1
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
+        Me.PictureBox1.Visible = False
         '
         'PictureBox2
         '
@@ -89,6 +90,7 @@ Partial Class Form1
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 3
         Me.PictureBox2.TabStop = False
+        Me.PictureBox2.Visible = False
         '
         'PictureBox3
         '
@@ -99,6 +101,7 @@ Partial Class Form1
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 4
         Me.PictureBox3.TabStop = False
+        Me.PictureBox3.Visible = False
         '
         'PictureBox4
         '
@@ -109,6 +112,7 @@ Partial Class Form1
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 5
         Me.PictureBox4.TabStop = False
+        Me.PictureBox4.Visible = False
         '
         'PictureBox5
         '
@@ -119,6 +123,7 @@ Partial Class Form1
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox5.TabIndex = 6
         Me.PictureBox5.TabStop = False
+        Me.PictureBox5.Visible = False
         '
         'PictureBox6
         '
@@ -130,6 +135,7 @@ Partial Class Form1
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox6.TabIndex = 7
         Me.PictureBox6.TabStop = False
+        Me.PictureBox6.Visible = False
         '
         'ContextMenuStrip1
         '
@@ -140,13 +146,13 @@ Partial Class Form1
         'GuardarImagenToolStripMenuItem
         '
         Me.GuardarImagenToolStripMenuItem.Name = "GuardarImagenToolStripMenuItem"
-        Me.GuardarImagenToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.GuardarImagenToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
         Me.GuardarImagenToolStripMenuItem.Text = "Guardar Logo"
         '
         'CambiarLogoToolStripMenuItem
         '
         Me.CambiarLogoToolStripMenuItem.Name = "CambiarLogoToolStripMenuItem"
-        Me.CambiarLogoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CambiarLogoToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
         Me.CambiarLogoToolStripMenuItem.Text = "Cambiar Logo"
         '
         'PictureBox7
