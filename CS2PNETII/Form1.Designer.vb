@@ -254,7 +254,7 @@ Partial Class Form1
         Me.btnAleatoreo.Name = "btnAleatoreo"
         Me.btnAleatoreo.Size = New System.Drawing.Size(160, 23)
         Me.btnAleatoreo.TabIndex = 20
-        Me.btnAleatoreo.Text = "Coordenada Aleatorea"
+        Me.btnAleatoreo.Text = "Coordenada Aleatoria"
         Me.btnAleatoreo.UseVisualStyleBackColor = True
         '
         'destino2x
