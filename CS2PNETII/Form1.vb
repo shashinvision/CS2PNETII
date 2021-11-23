@@ -140,7 +140,7 @@
             .FilterIndex = 3
             If (.ShowDialog() = Windows.Forms.DialogResult.OK) Then
                 PictureBox6.Image = Image.FromFile(.FileName)
-                PictureBox6.Size = PictureBox1.Image.Size
+                PictureBox6.Size = New Size(77, 61)
             End If
         End With
     End Sub
