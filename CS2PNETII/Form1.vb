@@ -82,7 +82,50 @@
         brochaG.Dispose()
     End Sub
 
+    Private Sub GuardarImagenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GuardarImagenToolStripMenuItem.Click
 
+        If (PictureBox6.Image Is Nothing) Then
+            MessageBox.Show("No se a encontrado la imagen")
+        Else
+
+            SaveFileDialog1.Filter = "Archivos BMP|*.bmp" & "|Archivos GIF|*.gif" &
+            "|Archivos JPG|*.jpg;*.jpeg" & "|Archivos PNG|*.png" &
+            "|Archivos TIFF|*.tif"
+            SaveFileDialog1.FilterIndex = 3
+            If (SaveFileDialog1.ShowDialog() = Windows.Forms.DialogResult.OK) Then
+                If SaveFileDialog1.FileName <> "" Then
+                    Dim fs As System.IO.FileStream = CType(SaveFileDialog1.OpenFile(),
+                   System.IO.FileStream)
+                    Try
+                        Select Case SaveFileDialog1.FilterIndex
+                            Case 1
+                                PictureBox6.Image.Save(fs,
+                               System.Drawing.Imaging.ImageFormat.Bmp)
+                            Case 2
+                                PictureBox6.Image.Save(fs,
+                               System.Drawing.Imaging.ImageFormat.Gif)
+                            Case 3
+                                PictureBox6.Image.Save(fs,
+                               System.Drawing.Imaging.ImageFormat.Jpeg)
+                            Case 4
+                                PictureBox6.Image.Save(fs,
+                               System.Drawing.Imaging.ImageFormat.Png)
+                            Case 5
+                                PictureBox6.Image.Save(fs,
+                               System.Drawing.Imaging.ImageFormat.Tiff)
+                        End Select
+                        MessageBox.Show("La imagen se guardó correctamente")
+                        fs.Close()
+                    Catch ex As Exception
+                        MessageBox.Show("Se produjo el siguiente error: " &
+                       ex.Message)
+                        fs.Close()
+                    End Try
+                End If
+            End If
+        End If
+
+    End Sub
 
 
 End Class

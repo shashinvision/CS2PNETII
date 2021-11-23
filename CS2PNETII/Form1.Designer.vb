@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -29,6 +30,9 @@ Partial Class Form1
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.GuardarImagenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CambiarLogoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -53,12 +57,14 @@ Partial Class Form1
         Me.destino5y = New System.Windows.Forms.TextBox()
         Me.destino6y = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ContextMenuStrip1.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -115,6 +121,7 @@ Partial Class Form1
         '
         'PictureBox6
         '
+        Me.PictureBox6.ContextMenuStrip = Me.ContextMenuStrip1
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
         Me.PictureBox6.Location = New System.Drawing.Point(274, 369)
         Me.PictureBox6.Name = "PictureBox6"
@@ -122,6 +129,24 @@ Partial Class Form1
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox6.TabIndex = 7
         Me.PictureBox6.TabStop = False
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GuardarImagenToolStripMenuItem, Me.CambiarLogoToolStripMenuItem})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(150, 48)
+        '
+        'GuardarImagenToolStripMenuItem
+        '
+        Me.GuardarImagenToolStripMenuItem.Name = "GuardarImagenToolStripMenuItem"
+        Me.GuardarImagenToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.GuardarImagenToolStripMenuItem.Text = "Guardar Logo"
+        '
+        'CambiarLogoToolStripMenuItem
+        '
+        Me.CambiarLogoToolStripMenuItem.Name = "CambiarLogoToolStripMenuItem"
+        Me.CambiarLogoToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.CambiarLogoToolStripMenuItem.Text = "Cambiar Logo"
         '
         'PictureBox7
         '
@@ -364,6 +389,7 @@ Partial Class Form1
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ContextMenuStrip1.ResumeLayout(False)
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -401,4 +427,8 @@ Partial Class Form1
     Friend WithEvents destino5y As TextBox
     Friend WithEvents destino6y As TextBox
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents GuardarImagenToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CambiarLogoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SaveFileDialog1 As SaveFileDialog
 End Class
