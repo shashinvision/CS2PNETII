@@ -127,5 +127,14 @@
 
     End Sub
 
-
+    Private Sub CambiarLogoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CambiarLogoToolStripMenuItem.Click
+        With OpenFileDialog1
+            .Filter = "Archivo BMP|*.bmp" & "|Archivo GIF|*.gif" & "|Archivo JPG |*.jpg;*.jpeg" & "|Archivo PNG|*.png" & "|Archivo TIFF|*.tif"
+            .FilterIndex = 3
+            If (.ShowDialog() = Windows.Forms.DialogResult.OK) Then
+                PictureBox6.Image = Image.FromFile(.FileName)
+                PictureBox6.Size = PictureBox1.Image.Size
+            End If
+        End With
+    End Sub
 End Class

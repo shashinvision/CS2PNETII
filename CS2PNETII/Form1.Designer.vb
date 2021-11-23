@@ -58,6 +58,7 @@ Partial Class Form1
         Me.destino6y = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -139,13 +140,13 @@ Partial Class Form1
         'GuardarImagenToolStripMenuItem
         '
         Me.GuardarImagenToolStripMenuItem.Name = "GuardarImagenToolStripMenuItem"
-        Me.GuardarImagenToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.GuardarImagenToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.GuardarImagenToolStripMenuItem.Text = "Guardar Logo"
         '
         'CambiarLogoToolStripMenuItem
         '
         Me.CambiarLogoToolStripMenuItem.Name = "CambiarLogoToolStripMenuItem"
-        Me.CambiarLogoToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.CambiarLogoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.CambiarLogoToolStripMenuItem.Text = "Cambiar Logo"
         '
         'PictureBox7
@@ -366,6 +367,10 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Coordenadas"
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -431,4 +436,5 @@ Partial Class Form1
     Friend WithEvents GuardarImagenToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CambiarLogoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class
